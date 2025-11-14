@@ -1,0 +1,35 @@
+{
+  "server": {
+    "name": "MCP Example Server",
+    "version": "1.0.0",
+    "host": "localhost",
+    "port": 8000,
+    "transport": "stdio"
+  },
+  "lm_studio": {
+    "enabled": true,
+    "base_url": "http://localhost:1234"
+  },
+  "tools": {
+    "enabled": [
+      "read_file",
+      "write_file",
+      "list_files",
+      "call_api",
+      "process_data",
+      "lm_studio_generate",
+      "lm_studio_chat",
+      "lm_studio_list_models",
+      "lm_studio_test_connection"
+    ]
+  },
+  "resources": {
+    "enabled": true,
+    "base_path": "./data"
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/mcp_server.log"
+  }
+}
+
